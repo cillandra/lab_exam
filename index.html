@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco-Friendly Electric Bill App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel = "stylesheet" href= "style.css">
+</head>
+<body>
+    <div class = "wrapper">
+        <form action = "index.html" method="get">
+            <header><h3> Eco-Friendly Electric Bill App </h3></header>
+
+            <div class = "input-box">
+                <label for="consumer_name">Consumer Name:</label>
+                <input type = "text" id="consumer_name" name="consumer_name">
+                <i class='bx bxs-user'></i>
+            </div>
+
+             <div class = "input-box">
+                <label for="previous_reading">Previous Reading (kWh)</label>
+                <input type = "number" id="previous_reading" name="previous_reading">
+            </div>
+
+            <div class = "input-box">
+                <label for="current_reading">Current Reading (kWh)</label>
+                <input type = "number" id="current_reading" name="current_reading">
+            </div>
+            
+            <div class = "input-box"> 
+                <label for="consumer_type">Consumer Type:</label>
+                <select name="cars" id="car-select">
+                    <option value="">Please choose an option</option>
+                    <option value="commercial">Commercial</option>
+                    <option value="residential">Residential</option>
+                </select>
+            </div>
+
+            <button type = "sumbit" class = "btn"> Calculate Bill</button>
+        </form>
+    </div>
+    
+</body>
+</html>
